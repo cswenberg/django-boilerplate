@@ -1,4 +1,4 @@
-# response-backend
+# A Boilerplate for Django Applications
 ## Installation
 Stack
 - python3
