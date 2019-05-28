@@ -77,3 +77,22 @@ Leave the psql shell with
 ```bash
 exit
 ```
+
+## Making changes to models
+
+When making changes to your models, you will need to let django migrate them with:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+The first command will create the migrations for your changes and the second will apply them to your database
+
+## Adding and admin user
+
+```bash
+python manage.py createsuperuser
+```
+
+Follow the prompt to create your username, email, and password
