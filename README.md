@@ -23,13 +23,14 @@ cp env.template .env
 To run django locally:
 
 ```bash
-python manage.py runserver 0.0.0.0:8000
+python manage.py runserver
 ```
 
 ## Setting up the Postgres Server (macos)
 
 Guide provided by [Robin weiruch](https://www.robinwieruch.de/postgres-sql-macos-setup/)
 
+### First time setup
 Installation with homebrew
 
 ```bash
@@ -48,6 +49,7 @@ Start our PostgreSQL database
 pg_ctl -D /usr/local/var/postgres start
 ```
 
+### Database setup
 Create our database
 
 ```bash
@@ -75,7 +77,7 @@ We have now initialized our postrgres database with our user and can now begin r
 Leave the psql shell with
 
 ```bash
-exit
+\q
 ```
 
 ## Making changes to models
